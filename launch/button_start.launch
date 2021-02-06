@@ -2,4 +2,6 @@
   <include file="$(find pimouse_ros)/launch/pimouse.launch" />
   <node pkg="pimouse_run_corridor" name="wall_stop" type="wall_stop1.py" required="true" output="screen"/>
   <node pkg="pimouse_run_corridor" name="buttons" type="buttons.py" required="true" output="screen"/> 
+  <node pkg="pimouse_run_corridor" name="leds" type="leds.py" required="true" output="screen"/> 
+  
 </launch>

@@ -2,10 +2,7 @@
 #!encoding: utf8
 
 import sys, rospy, math, os
-#from pimouse_run_corridor.msg import ButtonValues
 from pimouse_run_corridor.msg import LedValues
-from std_srvs.srv import Trigger, TriggerResponse
-
 
 class Leds():
 
@@ -37,5 +34,3 @@ if __name__=='__main__':
     rospy.init_node('leds')
     l = Leds()
     rospy.spin()   
-# rate = rospy.Rate(10)
-   #while not rospy.is_shutdown():
